@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "crates/bin/viewer",
+    
+    "crates/lib/pathtracer"
+]
+
+[profile.dev.package."*"]
+opt-level = 3

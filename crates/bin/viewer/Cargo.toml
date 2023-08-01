@@ -1,0 +1,35 @@
+[package]
+name = "viewer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clipboard = "0.5"
+glium = { version = "0.31.0", default-features = true } # same as in imgui master branch
+imgui = { git = "https://github.com/Gekkio/imgui-rs" }
+imgui-sys = { git = "https://github.com/Gekkio/imgui-rs" }
+imgui-glium-renderer = { git = "https://github.com/Gekkio/imgui-rs" }
+imgui-winit-support = { git = "https://github.com/Gekkio/imgui-rs" }
+
+#puffin= { git = "https://github.com/EmbarkStudios/puffin"}
+#puffin-imgui= { git = "https://github.com/EmbarkStudios/puffin" }
+#optick = "1.3.4"
+
+rand = "0.8.5"
+cgmath = "0.18.0"
+
+pathtracer =  { path = "../../lib/pathtracer" }
+serde = { version = "1.*", features = ["derive"] }
+serde_json = "1.*"
+
+native-dialog = "0.6.3"
+regex = "1.6.0"
+lazy_static = "1.4.0"
+
+image = "0.24.3"
+
+[[bin]]
+name = "viewer"
+path = "src/viewer.rs"
