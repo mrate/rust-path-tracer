@@ -5,7 +5,7 @@ Simple path tracer with OpenGL visualization. Nothing fancy, it's an educational
 Features:
  - Multi-threaded
  - Real-time visualization using OpenGL
- - Importange sampling
+ - Importance sampling
  - Camera configuration
 
 Some images:
